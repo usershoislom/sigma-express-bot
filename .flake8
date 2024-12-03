@@ -1,0 +1,14 @@
+[flake8]
+exclude =
+    .git,
+    __pycache__,
+    .venv,
+    */migrations/,
+
+application-import-names = config, database, filters, handlers, keyboards, lexicon
+max-line-length = 79
+builtins = black, flake8-builtins
+import-order-style = google
+inline-quotes = double
+enable-extensions = B, C, D100, RETURN
+max-expression-complexity = 7
